@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js",
-    "start:dev":  "echo 'Hola Mundo desde dev'"
+    "start:dev": "echo 'Hola Mundo desde dev'", 
+    "dev": "nodemon src/app.js"
   },
   "author": "Cinthia Argote",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
