@@ -10,4 +10,12 @@
 //     console.log(user);
 // });
 
-require("./js-foundation/05-factory");
+const { getAge, uuidv4 } = require('./plugins');
+
+const { buildMakePerson } = require('./js-foundation/05-factory')
+
+const makePerson = buildMakePerson({ getAge, uuidv4 });
+
+const obj = { name: "cinthia", birthdate: '1998-02-15'}
+const person = makePerson(obj)
+console.log(person)
