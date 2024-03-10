@@ -8,6 +8,6 @@ const { SHELL, HOMEBREW_PREFIX } = process.env;
 
 const characters = ['Flash', 'Superman', 'Batman']
 
-const [_, __, batman] = characters;
+const [ , , batman] = characters;
 
 // console.log(batman)
