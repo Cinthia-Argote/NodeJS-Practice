@@ -12,9 +12,9 @@ const heroes = [
 
 ]
 
-const findHero = (id) => {
+const findHero = (id: number) => {
     return heroes.find(hero => hero.id === id)
 }
 
-const hero = findHero(4)
-console.log(hero?.name ?? 'Hero not found');
+const hero = findHero(2)
+console.log(hero?.name ?? 'Hero not found!!');
