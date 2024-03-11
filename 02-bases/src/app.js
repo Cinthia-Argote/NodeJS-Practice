@@ -12,7 +12,7 @@
 
 
 
-const getPokemonById = require('./js-foundation/06-promises')
+// const getPokemonById = require('./js-foundation/06-promises')
 // const info = getPokemonById(4);
 
 // console.log(info);
@@ -22,9 +22,15 @@ const getPokemonById = require('./js-foundation/06-promises')
 //     console.log(info);
 // }, 3000)
 
-getPokemonById(4).then(pokemon => console.log({pokemon}))
-.catch(err => console.log({err}))
-.finally(() => console.log("Finalmente"))
+// getPokemonById(4).then(pokemon => console.log({pokemon}))
+// .catch(err => console.log({err}))
+// .finally(() => console.log("Finalmente"))
+
+
+const { buildLogger } = require('./plugins')
+
+const logger = buildLogger('app.js')
+logger.log('Hola mundo')
 
 
 // ! Referencia a la funcion factory y uso
