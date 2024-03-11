@@ -10,12 +10,21 @@
 //     console.log(user);
 // });
 
-const { getAge, uuidv4 } = require('./plugins');
 
-const { buildMakePerson } = require('./js-foundation/05-factory')
 
-const makePerson = buildMakePerson({ getAge, uuidv4 });
+const getPokemonById = require('./js-foundation/06-promises')
+ getPokemonById(4, (pokemon) => {
+    console.log({pokemon})
+ });
 
-const obj = { name: "cinthia", birthdate: '1998-02-15'}
-const person = makePerson(obj)
-console.log(person)
+
+// ! Referencia a la funcion factory y uso
+// const { getAge, uuidv4 } = require('./plugins');
+
+// const { buildMakePerson } = require('./js-foundation/05-factory')
+
+// const makePerson = buildMakePerson({ getAge, uuidv4 });
+
+// const obj = { name: "cinthia", birthdate: '1998-02-15'}
+// const person = makePerson(obj)
+// console.log(person)
