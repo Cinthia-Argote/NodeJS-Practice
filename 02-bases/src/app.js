@@ -13,9 +13,18 @@
 
 
 const getPokemonById = require('./js-foundation/06-promises')
- getPokemonById(4, (pokemon) => {
-    console.log({pokemon})
- });
+// const info = getPokemonById(4);
+
+// console.log(info);
+
+
+// setTimeout(() => {
+//     console.log(info);
+// }, 3000)
+
+getPokemonById(4).then(pokemon => console.log({pokemon}))
+.catch(err => console.log({err}))
+.finally(() => console.log("Finalmente"))
 
 
 // ! Referencia a la funcion factory y uso
